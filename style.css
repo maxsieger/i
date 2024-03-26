@@ -1,0 +1,28 @@
+
+body {
+    font-style: inter;
+}
+
+.nav-blok__navbar-1 {
+    display: flex;
+    justify-items: center;
+    height: 70px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.702);
+    width: 100%;
+    position: fixed;
+    margin-top: 0px;
+}
+.nav-block__list-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-block__link {
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
