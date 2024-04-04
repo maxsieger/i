@@ -1,31 +1,11 @@
-    document.addEventListener('DOMContentLoaded', () => { // DOM готов к взаимодейтсвию
+let ru = document.querySelector(".portfolio-img-1");
+let eng = document.querySelector(".portfolio-img-2");
 
-        const onScrollHeader = () => { // объявляем основную функцию onScrollHeader
-    
-        const header = document.querySelector('.nav-blok__navbar-1') // находим header и записываем в константу
-    
-        let prevScroll = window.pageYOffset // узнаем на сколько была прокручена страница ранее
-        let currentScroll // на сколько прокручена страница сейчас (пока нет значения)
-    
-        window.addEventListener('scroll', () => { // при прокрутке страницы
-    
-            currentScroll = window.pageYOffset // узнаем на сколько прокрутили страницу
-    
-            const headerHidden = () => header.classList.contains('.nav-blok__navbar-1--hidden') // узнаем скрыт header или нет
-    
-            if (currentScroll > prevScroll && !headerHidden()) { // если прокручиваем страницу вниз и header не скрыт
-            header.classList.add('nav-blok__navbar-1--hidden') // то скрываем header
-            }
-            if (currentScroll < prevScroll && headerHidden()) { // если прокручиваем страницу вверх и header скрыт
-            header.classList.remove('.nav-blok__navbar-1--hidden') // то отображаем header
-            }
-    
-            prevScroll = currentScroll // записываем на сколько прокручена страница на данный момент
-    
-        })
-    
-        }
-    
-        onScrollHeader() // вызываем основную функцию onScrollHeader
-    
-    });
+ru.addEventListener("click", ru_open())
+eng.addEventListener("click", eng_open())
+
+function ru_open(){
+    let ru_div = document.querySelector("div-portfolio__img-1");
+    ru.classList.add("portfolio-img-1--activ");
+    ru_div.classList.add("div-portfolio__img-1--activ");
+}
