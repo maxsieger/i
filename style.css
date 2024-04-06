@@ -50,9 +50,6 @@ body {
     display: inline-block;
 }
 
-.nav-blok__krest-2 {
-    transform: rotate(90deg);
-}
 
 .hamburger div {
     width: 30px;
