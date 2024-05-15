@@ -9,12 +9,31 @@ function burger_open() {
     console.log(name)
 }
 
-function openModal() {
-    var modal = document.getElementsByClassName("div-portfolio__img-1--off");
-    modal.style.display = "flex";
-}
+const krest = document.querySelector(".krest");
+const krest2 = document.querySelector(".krest2");
 
-    function closeModal() {
-    var modal = document.getElementById("div-portfolio__img-1--off");
-    modal.style.display = "none";
-}
+const portfilio_1_open = document.querySelector(".div-portfolio__img-1--on");
+const portfilio_2_open = document.querySelector(".div-portfolio__img-2--on");
+
+const portfilio_1 = document.querySelector(".div-portfolio__img-1"); 
+const portfilio_2 = document.querySelector(".div-portfolio__img-2"); 
+
+krest.addEventListener("click", () => {
+    portfilio_1_open.style.display = "none";
+    portfilio_2_open.style.display = "none";
+});
+
+krest2.addEventListener("click", () => {
+    portfilio_1_open.style.display = "none";
+    portfilio_2_open.style.display = "none";
+});
+
+portfilio_1.addEventListener("click", () => {
+    portfilio_1_open.style.display = "flex";
+    portfilio_2_open.style.display = "none";
+});
+
+portfilio_2.addEventListener("click", () => {
+    portfilio_1_open.style.display = "none";
+    portfilio_2_open.style.display = "flex";
+});
