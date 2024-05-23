@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-    z-index: 100000000;
+    z-index: 1000;
 }
 
 .nav-blok__navbar-1 {
@@ -280,6 +280,10 @@ body {
     width: 30px;
     height: 3px;
     background: #ffffff;
+}
+
+.portfolio-img-2--on {
+    width: 90%;
 }
 
 @media (max-width: 1000px) {
