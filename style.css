@@ -282,13 +282,17 @@ body {
     background: #ffffff;
 }
 
-.portfolio-img-2--on {
-    width: 90%;
-}
+
 
 @media (max-width: 1000px) {
     .nav-block__list-1 {
         display: none;
+    }
+    .portfolio-img-2--on {
+    width: 90%;
+    }
+    .portfolio-img-1--on {
+        width: 90%;
     }
     
     .nav-blok__navbar-2 {
