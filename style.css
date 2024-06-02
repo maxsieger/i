@@ -211,15 +211,11 @@ body {
 .div-portfolio__img-1 {
     width: 387px;
     height: 258px;
-    position: relative;
-    z-index: 0;
 }
 
 .div-portfolio__img-2 {
     width: 387px;
     height: 258px;
-    position: relative;
-    z-index: 0;
 }
 
 .div-portfolio__container {
