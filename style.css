@@ -6,6 +6,10 @@ body {
     font-family: "poppins", sans-serif;
 }
 
+* {
+    z-index: 0;
+}
+
 .header {
     z-index: 1000;
 }
@@ -23,6 +27,7 @@ body {
     top: 0;
     transition: 1s;
     color: #fff;
+    z-index: 1000;
 }
 
 .nav-block__list-1 {
