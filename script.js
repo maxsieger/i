@@ -18,22 +18,28 @@ const portfilio_2_open = document.querySelector(".div-portfolio__img-2--on");
 const portfilio_1 = document.querySelector(".div-portfolio__img-1"); 
 const portfilio_2 = document.querySelector(".div-portfolio__img-2"); 
 
+const header = document.querySelector(".header");
+
 krest.addEventListener("click", () => {
     portfilio_1_open.style.display = "none";
     portfilio_2_open.style.display = "none";
+    header.style.display = "block";
 });
 
 krest2.addEventListener("click", () => {
     portfilio_1_open.style.display = "none";
     portfilio_2_open.style.display = "none";
+    header.style.display = "block";
 });
 
 portfilio_1.addEventListener("click", () => {
     portfilio_1_open.style.display = "flex";
     portfilio_2_open.style.display = "none";
+    header.style.display = "none";
 });
 
 portfilio_2.addEventListener("click", () => {
     portfilio_1_open.style.display = "none";
     portfilio_2_open.style.display = "flex";
+    header.style.display = "none";
 });
